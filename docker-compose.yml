@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  gwap-gym:
+    container_name: gwap-gym
+    build: .
+    expose:
+      - 8000
+    ports:
+      - 8080:8080
+    env_file:
+      - environments/hml.env
